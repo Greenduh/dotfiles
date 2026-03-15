@@ -24,7 +24,6 @@ environment {
 input {
     keyboard {
         xkb {
-            // For more information, see xkeyboard-config(7).
             layout "us,ru"
             options "grp:menu_toggle,compose:ralt,ctrl:nocaps"
         }
@@ -33,33 +32,14 @@ input {
     }
 
     touchpad {
-        // off
         tap
-        // dwt
-        // dwtp
-        // drag false
-        // drag-lock
         natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "two-finger"
-        // disabled-on-external-mouse
+        scroll-factor 0.5
+        accel-profile "flat"
     }
 
     mouse { accel-profile "flat"; }
 
-    trackpoint {
-        // off
-        // natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "on-button-down"
-        // scroll-button 273
-        // scroll-button-lock
-        // middle-emulation
-    }
-
-    // warp-mouse-to-focus
     focus-follows-mouse max-scroll-amount="0%"
 }
 
@@ -145,9 +125,7 @@ layer-rule {
     place-within-backdrop true
 }
 
-gestures {
-    hot-corners { off; }
-}
+gestures { hot-corners { off; }; }
 
 // ┌────────────────────────────────────────────────────────────────────────────────┐
 // │                                                                                │
