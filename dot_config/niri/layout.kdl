@@ -20,6 +20,7 @@ layout {
     focus-ring { off; }
 
     border {
+        on
         width 2
         active-color "#98bb6c"
         inactive-color "#505050"
