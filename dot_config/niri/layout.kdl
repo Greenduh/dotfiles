@@ -1,0 +1,38 @@
+layout {
+    gaps 8
+    center-focused-column "never"
+    always-center-single-column
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    preset-window-heights {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    default-column-width { proportion 0.5; }
+
+    focus-ring { off; }
+
+    border {
+        width 2
+        active-color "#98bb6c"
+        inactive-color "#505050"
+    }
+
+    shadow {
+        on
+        draw-behind-window true
+        softness 30
+        spread 8
+        offset x=0 y=5
+        color "#0007"
+    }
+
+    background-color "#000000"
+}
