@@ -21,18 +21,18 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 animations { slowdown 1.5; }
 
 window-rule {
+    geometry-corner-radius 8
+    clip-to-geometry true
+    draw-border-with-background false
+}
+
+window-rule {
     match app-id="steam"
     open-maximized true
 }
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
-}
-
-window-rule {
-    geometry-corner-radius 8
-    clip-to-geometry true
-    draw-border-with-background false
 }
 
 layer-rule {
