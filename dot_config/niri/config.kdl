@@ -1,44 +1,24 @@
 // https://kdl.dev
 // https://niri-wm.github.io/niri/
 
-prefer-no-csd
-
 include "input.kdl"
-include "layout.kdl"
 include "binds.kdl"
+include "layout.kdl"
+include "window-rules.kdl"
+include "animations.kdl"
+
+prefer-no-csd
 
 environment {
     ELECTRON_OZONE_PLATFORM_HINT "auto"
-    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_QPA_PLATFORMTHEME "gtk3"
 }
 
 hotkey-overlay { skip-at-startup; }
 
 cursor { xcursor-theme "breeze_cursors"; }
 
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
-
-animations { slowdown 1.5; }
-
-window-rule {
-    geometry-corner-radius 8
-    clip-to-geometry true
-    draw-border-with-background false
-}
-
-window-rule {
-    match app-id="steam"
-    open-maximized true
-}
-window-rule {
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-    open-floating true
-}
-
-layer-rule {
-    match namespace="^noctalia-overview*"
-    place-within-backdrop true
-}
+screenshot-path "~/Pictures/Screenshots/%Y-%m-%d %H-%M-%S.png"
 
 gestures { hot-corners { off; }; }
 

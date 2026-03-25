@@ -1,15 +1,16 @@
 layout {
+    background-color "#000000"
     center-focused-column "never"
     always-center-single-column
 
     gaps 12
-    /-struts {
-        left -12
-        right -12
-        top -12
-        bottom -12
+    struts {
+        left   0
+        right  0
+        top    0
+        bottom 0
     }
-    
+
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
@@ -26,13 +27,13 @@ layout {
 
     focus-ring {
         on
-        width 2
-        active-color "#aad94c"
+        width 3
+        active-gradient from="#b8cc52" to="#f07078" angle=45
         inactive-color "#505050"
     }
 
     shadow {
-        // on
+        on
         draw-behind-window false
         softness 30
         spread 8
