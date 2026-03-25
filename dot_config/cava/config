@@ -1,0 +1,113 @@
+[general]
+live-config = 1
+framerate = 60
+
+autosens = 0
+sensitivity = 100
+
+bars = 0
+bar_width = 1
+bar_spacing = 0
+# bar_height is only used for output in "noritake" format
+; bar_height = 32
+
+# For SDL width and space between bars is in pixels, defaults are:
+; bar_width = 20
+; bar_spacing = 5
+
+# sdl_glsl have these default values, they are only used to calculate max number of bars.
+; bar_width = 1
+; bar_spacing = 0
+
+center_align = 1
+
+max_height = 100
+
+lower_cutoff_freq = 50
+higher_cutoff_freq = 16000
+
+sleep_timer = 5
+
+[input]
+; method = pulse
+; source = auto
+
+; method = pipewire
+; source = auto
+
+; method = alsa
+; source = hw:Loopback,1
+
+; method = fifo
+; source = /tmp/mpd.fifo
+
+; method = shmem
+; source = /squeezelite-AA:BB:CC:DD:EE:FF
+
+; method = portaudio
+; source = auto
+
+; method = sndio
+; source = default
+
+; method = oss
+; source = /dev/dsp
+
+; method = jack
+; source = default
+
+; sample_rate = 44100
+; sample_bits = 16
+; channels = 2
+; autoconnect = 2
+; active = 1
+; remix = 1
+; virtual = 1
+
+[output]
+method = noncurses
+
+orientation = horizontal
+channels = stereo
+mono_option = average
+reverse = 0
+
+horizontal_stereo = 1
+left_bottom = 1
+
+; raw_target = /dev/stdout
+
+; data_format = binary
+
+; bit_format = 16bit
+
+; ascii_max_range = 1000
+
+# Ascii delimiters. In ascii format each bar and frame is separated by a delimiters.
+# Use decimal value in ascii table (i.e. 59 = ';' and 10 = '\n' (line feed)).
+; bar_delimiter = 59
+; frame_delimiter = 10
+
+; sdl_width = 1024
+; sdl_height = 512
+; sdl_x = -1
+; sdl_y= -1
+; sdl_full_screen = 0
+
+xaxis = none
+
+; vertex_shader = pass_through.vert
+; fragment_shader = bar_spectrum.frag
+
+show_idle_bar_heads = 0
+
+[color]
+horizontal_gradient = 1
+horizontal_gradient_color_1 = '#f07078'
+horizontal_gradient_color_2 = '#b8cc52'
+theme = 'none'
+
+[smoothing]
+monstercat = 1
+waves = 0
+noise_reduction = 25
