@@ -23,8 +23,8 @@ center_align = 1
 
 max_height = 100
 
-lower_cutoff_freq = 50
-higher_cutoff_freq = 16000
+lower_cutoff_freq = 20
+higher_cutoff_freq = 18000
 
 sleep_timer = 5
 
@@ -111,3 +111,14 @@ theme = 'none'
 monstercat = 1
 waves = 0
 noise_reduction = 25
+
+[eq]
+1 = 1.5
+2 = 1.5
+3 = 1.25
+4 = 1
+5 = 1
+6 = 1
+7 = 1
+8 = 1
+9 = 1
