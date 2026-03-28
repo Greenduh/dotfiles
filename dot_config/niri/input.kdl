@@ -2,7 +2,7 @@ input {
     keyboard {
         xkb {
             layout "us,ru"
-            options "grp:menu_toggle,compose:ralt,ctrl:nocaps"
+            options "grp:caps_toggle,compose:ralt,ctrl:nocaps"
         }
         repeat-delay 250
         repeat-rate 40
