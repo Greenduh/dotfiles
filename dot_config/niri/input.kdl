@@ -1,3 +1,5 @@
+// https://niri-wm.github.io/niri/Configuration%3A-Input
+
 input {
     keyboard {
         xkb {

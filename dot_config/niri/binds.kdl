@@ -1,3 +1,5 @@
+// https://niri-wm.github.io/niri/Configuration%3A-Key-Bindings
+
 binds {
     Mod+E repeat=false hotkey-overlay-title="Open File Browser" { spawn "nautilus"; }
     Mod+T repeat=false hotkey-overlay-title="Open Terminal"     { spawn "kitty"; }
