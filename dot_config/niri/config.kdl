@@ -16,7 +16,7 @@ environment {
 
 hotkey-overlay { skip-at-startup; }
 
-cursor { xcursor-theme "breeze_cursors"; }
+cursor { xcursor-theme "Vimix-cursors"; }
 
 screenshot-path "~/Pictures/Screenshots/%Y-%m-%d %H-%M-%S.png"
 

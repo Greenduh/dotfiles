@@ -2,6 +2,7 @@ if status is-interactive
     set -g fish_greeting
     zoxide init fish | source
     starship init fish | source
+    source ~/my-environment.sh
 
     alias hx='helix'
     alias rmorphan='yay -Qdtq | yay -Rns -'
