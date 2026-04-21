@@ -23,3 +23,5 @@ screenshot-path "~/Pictures/Screenshots/%Y-%m-%d %H-%M-%S.png"
 gestures { hot-corners { off; }; }
 
 spawn-at-startup "qs" "-c" "noctalia-shell" "--no-duplicate"
+
+include "./noctalia.kdl"
